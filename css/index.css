@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --font-family-title: "Pacifico", cursive;
+  --btn-color: #ffb03b;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: var(--font-family-title);
+}
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(#21252956, #2125295b),
+    url(../assets/slide/slide-1.jpg);
+  background-size: cover;
+}
+
+header nav .navbar-brand h1 {
+  font-family: var(--font-family-title);
+  color: white;
+}
+
+.navbar-nav .nav-link.active {
+  --bs-navbar-active-color :var(--btn-color);
+}
+header nav ul li .nav-link {
+  color: white;
+  font-size: 1rem;
+}
+header nav ul li .btn-form {
+  background-color: var(--btn-color);
+}
+
+.section--1 .img {
+  background-image: url("../assets/about.jpg");
+  background-size: cover;
+  height: 100%;
+}
+.section--2 .cardParent {
+  box-shadow: 2px 3px 7px gray;
+  transition: all 0.7s;
+}
+.section--2 .card1 {
+  transition: all 0.7s;
+}
+
+.section--2 .cardParent:hover {
+  background-color: rgb(255, 26, 9);
+}
+.section--2 .cardParent:hover .card1 {
+  color: white;
+  transform: scale(1.2);
+  transform: translateY(-20px);
+}
+
+.section--3 .active {
+  --bs-nav-pills-link-active-bg: var(--btn-color);
+  --bs-nav-pills-link-active-color: white;
+}
+.nav-link {
+  --bs-nav-link-color: black;
+}
+
+.section--4 button.active {
+  --bs-nav-pills-link-active-bg: transparent;
+  --bs-nav-pills-link-active-color: var(--btn-color);
+}
+.section--4 button.active {
+  position: relative;
+  overflow: hidden;
+}
+.section--4 button.active::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: var(--btn-color);
+  width: 4px;
+  height: 100%;
+}
+.section--4 button {
+  position: relative;
+}
+.section--4 button::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: gray;
+  width: 4px;
+  height: 100%;
+}
+/* section-5 */
+.section-5 {
+  background-image: linear-gradient(#212529d5, #212529c2), url(../assets/events-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  
+}
+/* section-6 */
+
+.section-6 .des .img{
+  transition: all 0.3s;
+}
+.section-6 .des:hover .img{
+  transform: scale(1.2);
+}
+/*  */
+.section-7 .my-class{
+  padding-block: 20px;
+  box-shadow: 3px 4px  7px var(--btn-color);
+}
+/* footer */
+footer .icons i {
+color: white;
+font-size: 20px;
+}
+footer .icons i:hover {
+color: var(--btn-color);
+}
+/* pop js */
+.pop {
+  z-index: 500;
+  background-image: linear-gradient(#eb0b0b86,rgba(0, 0, 0, 0.582));
+  width: fit-content;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+.hidden {
+ display: none;
+}
+.overlay {
+  z-index: 200;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+ bottom: 0;
+ 
+  background-color: rgba(0, 0, 0, 0.527);
+}
+.exit {
+position: absolute;
+top: 5%;
+right: 0;
+}
