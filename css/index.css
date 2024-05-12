@@ -148,8 +148,8 @@ color: var(--btn-color);
   z-index: 500;
   background-image: linear-gradient(#eb0b0b86,rgba(0, 0, 0, 0.582));
   width: fit-content;
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
  
@@ -165,7 +165,7 @@ color: var(--btn-color);
   top: 0;
  bottom: 0;
  
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.733);
 }
 .exit {
 position: absolute;
