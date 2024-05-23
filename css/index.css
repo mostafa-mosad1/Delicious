@@ -149,7 +149,7 @@ color: var(--btn-color);
   background-image: linear-gradient(#eb0b0b86,rgba(0, 0, 0, 0.582));
   width: fit-content;
   position: fixed;
-  top: 20px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
  
