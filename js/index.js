@@ -35,7 +35,7 @@ function slide() {
                   background-image: url(assets/slide/${slider[sliderIndex]});
                   background-size: cover;
                 `;
-    }, 1000);
+    }, 10000);
   }
 }
 

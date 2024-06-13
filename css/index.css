@@ -57,20 +57,20 @@ a {
   background-color: white;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -250px;
 
   z-index: 10;
   transition: all 1s;
 }
 .side{
-    left: -250px;
+    left: 0;
 }
  .slider-nav .fa-gear {
   position: absolute;
   right: -3.1rem;
   top: 50%;
   transform: translatey(-50%);
-  color: black;
+  color: var(--btn-color);
   font-size: 2rem;
   padding: 1rem;
   cursor: pointer;
@@ -279,6 +279,11 @@ right: 0;
   background-image: url("../assets/pop-img.jpg");
   background-size: cover;
 
+}
+.pop-img .img img {
+  background-color: #ffb03b !important;
+  background-size: contain;
+  background-position: center;
 }
 .fa-chevron-left,
 .fa-chevron-right{
